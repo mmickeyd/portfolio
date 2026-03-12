@@ -2,20 +2,7 @@ import React from 'react';
 import { APPLICATIONS } from '../../assets/data/Applications';
 import githhubLogo from '../../assets/logos/github-mark-white.svg';
 import './Projects.css';
-import {
-    Box,
-    Card,
-    CardContent,
-    CardMedia,
-    Typography,
-    Button,
-    Stack,
-    CardActionArea,
-    Grid,
-    Link,
-} from '@mui/material';
-import LaunchIcon from '@mui/icons-material/Launch';
-import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
+import { Card, CardContent, Typography, Grid, Link } from '@mui/material';
 
 export const Projects = () => {
     return (
@@ -31,6 +18,7 @@ export const Projects = () => {
                         className={'githubLink'}
                         href={'https://github.com/mmickeyd'}
                         target='_blank'
+                        rel='noreferrer'
                     >
                         {'< GitHub Account />'}
                     </a>
@@ -38,7 +26,7 @@ export const Projects = () => {
                 <div className={'container'}>
                     <Grid container spacing={4}>
                         {APPLICATIONS.map((app, index) => (
-                            <Card className={'card'}>
+                            <Card className={'card'} key={index}>
                                 <CardContent className={'cardContent'}>
                                     <div>
                                         {app.image ? (
@@ -59,21 +47,16 @@ export const Projects = () => {
                                         <Typography className={'cardTitle'}>
                                             {app.title}
                                             <div className={'links'}>
-                                                {/* <a
-                          href="https://youtube.com/"
-                          className={"playbackIcon"}
-                          target="_blank"
-                        >
-                          <PlayCircleOutlineIcon className={"playbackIcon"} />
-                        </a> */}
                                                 <Link
                                                     className={'url'}
                                                     href={app.url}
                                                     target='_blank'
+                                                    rel='noreferrer'
                                                 >
                                                     <img
                                                         src={githhubLogo}
                                                         className={'githubLogo'}
+                                                        alt='GitHub'
                                                     />
                                                 </Link>
                                             </div>

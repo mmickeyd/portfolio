@@ -2,7 +2,6 @@ import React from 'react';
 import { WORKHISTORY } from '../../assets/data/WorkHistory';
 import './Experience.css';
 import { Chip } from '@mui/material';
-import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
 export const Experience = () => {
     return (

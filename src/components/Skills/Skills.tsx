@@ -1,8 +1,7 @@
-import React from 'react';
 import { FRONTENDSKILLS } from '../../assets/data/FrontendSkills';
 import { BACKENDSKILLS } from '../../assets/data/BackendSkills';
 import { TOOLSPRACTICES } from '../../assets/data/ToolsPractices';
-import { Box, Grid, Tooltip, IconButton, Icon } from '@mui/material';
+import { Box, Grid } from '@mui/material';
 import { SkillBar } from './SkillBar';
 import './Skills.css';
 import { TOOLS } from '../../assets/constants';
