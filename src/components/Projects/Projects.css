@@ -14,7 +14,7 @@
   }
 
   .subHeader {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     margin-top: 10px;
     color: #45b0ad;
@@ -25,12 +25,12 @@
     text-decoration: none;
     transition: color 0.75s ease;
     font-weight: 400;
-  }
 
-  .githubLink:hover {
-    color: #004c94;
-    text-decoration: underline;
-    font-weight: 700;
+    &:hover {
+      color: #004c94;
+      text-decoration: underline;
+      font-weight: 700;
+    }
   }
 
   .name {
@@ -42,12 +42,9 @@
       font-size: 16px;
     }
   }
-  /* #0b2e33 */
-  /* #b8e3e9; */
 
   .container {
     padding: 4rem 2rem;
-    /* background-color: #0b2e33; */
 
     .card {
       background-color: #1b3c41;
@@ -60,12 +57,18 @@
         transform: translateY(-5px);
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
       }
+
       .cardContent {
         display: flex;
         padding: 20px 20px;
 
         .imageSection {
           width: 35rem;
+          height: 400px;
+          object-fit: cover;
+          object-position: top;
+          flex-shrink: 0;
+          border-radius: 4px;
         }
 
         .textSection {

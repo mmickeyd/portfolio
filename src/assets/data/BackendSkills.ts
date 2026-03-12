@@ -1,4 +1,4 @@
-import { BACKEND } from './constants';
+import { BACKEND } from '../constants';
 
 export const BACKENDSKILLS = {
     category: BACKEND,

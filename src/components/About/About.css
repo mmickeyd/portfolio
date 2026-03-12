@@ -1,0 +1,78 @@
+.aboutPage {
+  width: 100%;
+ 
+  .aboutContent {
+    width: 92%;
+    display: flex;
+    align-items: flex-start;
+    gap: 4em;
+    padding: 2em 0;
+    text-align: left;
+    justify-self: center;
+ 
+    .aboutText {
+      flex: 1;
+ 
+      .pageHeader {
+        font-size: 60px;
+        margin: 10px 0 0 0;
+      }
+ 
+      .pageSubtitle {
+        font-size: 14px;
+        color: #45b0ad;
+        font-weight: 400;
+        margin: 4px 0 24px 0;
+        letter-spacing: 0.05em;
+      }
+ 
+      .bio {
+        font-size: 14px;
+        line-height: 1.8;
+        color: #b0b8c8;
+        margin: 0 0 14px 0;
+ 
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+ 
+    .aboutStats {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      min-width: 200px;
+      border: 1.5px solid white;
+ 
+      .statCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5em 2em;
+        border-bottom: 1.5px solid white;
+        gap: 6px;
+ 
+        &:last-child {
+          border-bottom: none;
+        }
+ 
+        .statNumber {
+          font-size: 36px;
+          font-weight: 700;
+          color: #45b0ad;
+          line-height: 1;
+        }
+ 
+        .statLabel {
+          font-size: 10px;
+          font-weight: 600;
+          color: #dadada;
+          letter-spacing: 0.12em;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import { FRONTEND, FRONTENDCSS } from './constants';
+import { FRONTEND, FRONTENDCSS } from '../constants';
 
 export const FRONTENDSKILLS = {
     category: FRONTEND,

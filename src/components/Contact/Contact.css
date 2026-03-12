@@ -1,0 +1,176 @@
+.contactPage {
+  width: 90%;
+  max-width: 1410px;
+  min-width: 900px;
+  margin-bottom: 2em;
+ 
+  .pageHeader {
+    width: 100%;
+    margin: 10px auto 0;
+    font-size: 60px;
+  }
+ 
+  .pageSubtitle {
+    font-size: 14px;
+    color: #45b0ad;
+    margin-bottom: 28px;
+    font-weight: 400;
+  }
+ 
+  .contactCard {
+    border: 1.5px solid white;
+    padding: 2.5em 3em;
+    text-align: left;
+ 
+    .contactForm {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+ 
+      .formRow {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5em;
+ 
+        .formGroup {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+ 
+          .formLabel {
+            display: flex;
+            justify-content: space-between;
+            font-size: 11px;
+            font-weight: 600;
+            color: #45b0ad;
+            letter-spacing: 0.12em;
+ 
+            .charCount {
+              color: #555c6b;
+              font-weight: 400;
+              letter-spacing: 0;
+            }
+          }
+ 
+          .formInput {
+            background-color: #1c1f26;
+            border: 1.5px solid #3a3f4b;
+            color: #dadada;
+            padding: 10px 14px;
+            font-size: 14px;
+            font-family: inherit;
+            outline: none;
+            transition: border-color 0.2s ease;
+            resize: none;
+ 
+            &::placeholder {
+              color: #555c6b;
+            }
+ 
+            &:focus {
+              border-color: #45b0ad;
+            }
+          }
+        }
+      }
+ 
+      .formGroup {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+ 
+        .formLabel {
+          display: flex;
+          justify-content: space-between;
+          font-size: 11px;
+          font-weight: 600;
+          color: #45b0ad;
+          letter-spacing: 0.12em;
+ 
+          .charCount {
+            color: #555c6b;
+            font-weight: 400;
+            letter-spacing: 0;
+          }
+        }
+ 
+        .formInput {
+          background-color: #1c1f26;
+          border: 1.5px solid #3a3f4b;
+          color: #dadada;
+          padding: 10px 14px;
+          font-size: 14px;
+          font-family: inherit;
+          outline: none;
+          transition: border-color 0.2s ease;
+          resize: none;
+ 
+          &::placeholder {
+            color: #555c6b;
+          }
+ 
+          &:focus {
+            border-color: #45b0ad;
+          }
+ 
+          &.formTextarea {
+            line-height: 1.6;
+          }
+        }
+      }
+ 
+      .submitButton {
+        align-self: flex-start;
+        background-color: transparent;
+        border: 1.5px solid #45b0ad;
+        color: #45b0ad;
+        padding: 10px 32px;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        cursor: pointer;
+        transition: background-color 0.2s ease, color 0.2s ease;
+        font-family: inherit;
+ 
+        &:hover:not(:disabled) {
+          background-color: #45b0ad;
+          color: #282c34;
+        }
+ 
+        &:disabled {
+          opacity: 0.6;
+          cursor: not-allowed;
+        }
+ 
+        &.success {
+          border-color: #00ffff;
+          color: #00ffff;
+ 
+          &:hover {
+            background-color: #00ffff;
+            color: #282c34;
+          }
+        }
+ 
+        &.error {
+          border-color: #e05c5c;
+          color: #e05c5c;
+ 
+          &:hover:not(:disabled) {
+            background-color: #e05c5c;
+            color: #282c34;
+          }
+        }
+      }
+ 
+      .statusMessage {
+        font-size: 12px;
+        margin: 0;
+ 
+        &.error {
+          color: #e05c5c;
+        }
+      }
+    }
+  }
+}

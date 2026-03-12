@@ -1,4 +1,4 @@
-import { TOOLS } from './constants';
+import { TOOLS } from '../constants';
 
 export const TOOLSPRACTICES = {
     category: TOOLS,
