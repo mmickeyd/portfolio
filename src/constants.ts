@@ -1,0 +1,9 @@
+export const HOME = "home";
+export const PROJECTS = "projects";
+export const ABOUT = "about";
+export const EXPERIENCE = "experience";
+export const SKILLS = "skills";
+export const FRONTEND = "frontend";
+export const FRONTENDCSS = "frontendcss";
+export const BACKEND = "backend";
+export const TOOLS = "tools & techniques";

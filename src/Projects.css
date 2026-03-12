@@ -1,0 +1,128 @@
+.horizontalRuler {
+  margin-top: 80px;
+  margin-bottom: 0;
+}
+.projectsPage {
+  width: 95%;
+  justify-self: center;
+  margin-top: -20px;
+  padding-top: 0;
+
+  .header {
+    font-size: 60px;
+    margin-bottom: 0;
+  }
+
+  .subHeader {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 10px;
+    color: #45b0ad;
+  }
+
+  .githubLink {
+    color: #dadada;
+    text-decoration: none;
+    transition: color 0.75s ease;
+    font-weight: 400;
+  }
+
+  .githubLink:hover {
+    color: #004c94;
+    text-decoration: underline;
+    font-weight: 700;
+  }
+
+  .name {
+    font-size: 22px;
+  }
+
+  .projectBreakdown {
+    .description {
+      font-size: 16px;
+    }
+  }
+  /* #0b2e33 */
+  /* #b8e3e9; */
+
+  .container {
+    padding: 4rem 2rem;
+    /* background-color: #0b2e33; */
+
+    .card {
+      background-color: #1b3c41;
+      color: white;
+      height: 100%;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: default;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      }
+      .cardContent {
+        display: flex;
+        padding: 20px 20px;
+
+        .imageSection {
+          width: 35rem;
+        }
+
+        .textSection {
+          max-width: 60rem;
+          min-width: 30rem;
+          align-self: center;
+          padding: 10px 20px;
+          margin-left: 16px;
+
+          .cardTitle {
+            color: #b8e3e9;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+
+            .links {
+              display: flex;
+              align-items: center;
+            }
+          }
+
+          .description {
+            color: #93b1b5;
+            font-size: 0.95rem;
+            text-align: left;
+          }
+
+          .url {
+            color: #dadada;
+            text-decoration-thickness: 0.1px;
+            text-underline-offset: -4px;
+            display: flex;
+          }
+
+          .playbackIcon {
+            height: 38px;
+            width: 38px;
+            color: #dadada;
+            padding-right: 10px;
+          }
+
+          .githubLogo {
+            height: 30px;
+            width: 30px;
+            align-self: center;
+          }
+
+          .githubText {
+            vertical-align: super;
+            margin: 6px;
+            margin-bottom: -4px;
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}

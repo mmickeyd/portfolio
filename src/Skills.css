@@ -1,0 +1,37 @@
+.skillsPage {
+  width: 100%;
+  .pageTitle {
+    margin: 20px 0 -5px 0;
+  }
+
+  .pageSubtitle {
+    font-size: 0.6em;
+    color: #45b0ad;
+  }
+
+  .categoryContainer {
+    display: grid;
+
+    .categoryName {
+      font-size: 1.2em;
+      color: #45b0ad;
+      text-align: left;
+      margin: 0;
+      margin-left: 24px;
+      padding: 2px;
+
+      .categoryNameEnd {
+        color: #dadada;
+      }
+    }
+
+    .skillContainer {
+      place-content: space-evenly;
+      padding: 0 2em;
+    }
+
+    .individualSkill {
+      width: 47%;
+    }
+  }
+}
