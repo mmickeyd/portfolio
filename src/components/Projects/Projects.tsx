@@ -41,10 +41,19 @@ export const Projects = () => {
                             <Card className={'card'}>
                                 <CardContent className={'cardContent'}>
                                     <div>
-                                        <img
-                                            className={'imageSection'}
-                                            src={app.image}
-                                        />
+                                        {app.image ? (
+                                            <img
+                                                className='imageSection'
+                                                src={app.image}
+                                                alt={app.title}
+                                            />
+                                        ) : (
+                                            <div className='imagePlaceholder'>
+                                                <span>
+                                                    WORKING ON A PREVIEW...
+                                                </span>
+                                            </div>
+                                        )}
                                     </div>
                                     <div className={'textSection'}>
                                         <Typography className={'cardTitle'}>
@@ -66,9 +75,6 @@ export const Projects = () => {
                                                         src={githhubLogo}
                                                         className={'githubLogo'}
                                                     />
-                                                    {/* <Typography className={"githubText"}>
-                      GitHub Repo
-                      </Typography> */}
                                                 </Link>
                                             </div>
                                         </Typography>
